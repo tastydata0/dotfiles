@@ -1,0 +1,66 @@
+#  ╔═╗╦  ╔═╗╔═╗╦═╗╦╔╦╗╔╦╗╦ ╦  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗
+#  ╠═╣║  ╠═╣║  ╠╦╝║ ║  ║ ╚╦╝  ║  ║ ║║║║╠╣ ║║ ╦	- Config by z0mbi3
+#  ╩ ╩╩═╝╩ ╩╚═╝╩╚═╩ ╩  ╩  ╩   ╚═╝╚═╝╝╚╝╚  ╩╚═╝	- https://github.com/gh0stzk/dotfiles
+#  General configuration
+
+#import:
+#  - ~/.config/alacritty/colors.yml
+#  - ~/.config/alacritty/fonts.yml
+import:
+  # uncomment the flavour you want below:
+  #      - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+  #    - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml 
+  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml  
+window:
+  padding:
+    x: 15
+    y: 15
+
+  decorations: none
+
+  opacity: 0.9
+  dynamic_title: true
+
+  history: 10000
+  multiplier: 3
+
+selection:
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Block
+    blinking: On
+    
+  unfocused_hollow: false 
+  blink_interval: 550
+
+live_config_reload: true
+# BEGIN ACE
+colors:
+  primary:
+    background: '#070D19'
+    foreground: '#c7cad0'
+  cursor:
+    text:       '#070D19'
+    cursor:     '#c7cad0'
+  normal:
+    black:      '#070D19'
+    red:        '#5D636F'
+    green:      '#666C78'
+    yellow:     '#737985'
+    blue:       '#7C828E'
+    magenta:    '#868C98'
+    cyan:       '#9197A3'
+    white:      '#c7cad0'
+  bright:
+    black:      '#8b8d91'
+    red:        '#5D636F'
+    green:      '#666C78'
+    yellow:     '#737985'
+    blue:       '#7C828E'
+    magenta:    '#868C98'
+    cyan:       '#9197A3'
+    white:      '#c7cad0'
+# END ACE

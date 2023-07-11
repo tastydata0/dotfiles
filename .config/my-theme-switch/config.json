@@ -1,0 +1,39 @@
+{
+    "light": 1,
+    "global_theme": [
+        "com.github.vinceliuice.Layan",
+        "com.github.vinceliuice.Layan-light"
+    ],
+    "color_scheme": [
+        "/home/alex/.local/share/color-schemes/GruvboxColors.colors",
+        "/home/alex/.local/share/color-schemes/LayanLight.colors"
+    ],
+    "applcation_style": [
+        "Lightly",
+        "kvantum"
+    ],
+    "vscode_theme": [
+        "Correia Gruvbox Theme",
+        "Catppuccin Latte"
+    ],
+    "konsole_theme": [
+        "KDE-Story",
+        "Moe"
+    ],
+    "wallpaper": [
+        "/home/alex/Windows/Users/Alex/Pictures/Wallpapers/best/0/black5_unicat.png",
+        "/home/alex/Windows/Users/Alex/Pictures/Wallpapers/best/1/peach_unicat.png"
+    ],
+    "btop_theme": [
+        "/usr/share/btop/themes/tokyo-night.theme",
+        "/usr/share/btop/themes/whiteout.theme"
+    ],
+    "qt_creator_theme": [
+        "OneDark",
+        "flat-light"
+    ],
+    "lock_screen_wallpaper": [
+        "/home/alex/Windows/Users/Alex/Pictures/Wallpapers/Pack 8/anime-anime-girls-dark-background-night-forest-car-roadside-road-long-hair-weapon-white-skin-1486287.jpg",
+        "/home/alex/Windows/Users/Alex/Pictures/Wallpapers/wallpaper.png"
+    ]
+}
