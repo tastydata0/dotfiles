@@ -44,8 +44,7 @@ sleep 0.3
 $HOME/dwm-flexipatch/scripts/xrdb-sync
 
 export VSCODE_THEME=$(jq -r .vscode_theme["$LIGHT_THEME"] <<< `cat $CONFIG_PATH`)
-$HOME/dwm-flexipatch/scripts/set-vscode-theme
-
+~/dwm-flexipatch/scripts/set-vscode-theme
 
 ### Alacritty ###
-$HOME/dwm-flexipatch/scripts/alacritty-color-export/script.sh
+~/dwm-flexipatch/scripts/alacritty-color-export/script.sh
