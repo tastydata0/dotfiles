@@ -1,5 +1,5 @@
 #!/bin/sh
 
-xrdb -merge /home/alex/.Xresources 
+xrdb -merge ~/.Xresources 
 xdotool key shift+Super+F5 
 pywalfox update 

@@ -4,3 +4,4 @@ make
 pamixer
 net-tools
 jq
+xdotool
