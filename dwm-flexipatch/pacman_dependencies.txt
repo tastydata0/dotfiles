@@ -3,3 +3,4 @@ alacritty
 make
 pamixer
 net-tools
+jq

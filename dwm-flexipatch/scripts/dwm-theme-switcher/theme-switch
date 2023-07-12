@@ -26,7 +26,7 @@ echo "$LIGHT_THEME"
 
 if [[ $* == *-r* ]]
 then
-    export WALLPAPER=`find ~/Windows/Users/Alex/Pictures/Wallpapers/best/$LIGHT_THEME -type f | shuf -n 1`
+    export WALLPAPER=`find ~/Pictures/Wallpapers/$LIGHT_THEME -type f | shuf -n 1`
 else
     export WALLPAPER=$(jq -r .wallpaper["$LIGHT_THEME"] <<< `cat $CONFIG_PATH`)
 fi
@@ -44,8 +44,8 @@ sleep 0.3
 $HOME/dwm-flexipatch/scripts/xrdb-sync
 
 export VSCODE_THEME=$(jq -r .vscode_theme["$LIGHT_THEME"] <<< `cat $CONFIG_PATH`)
-$AUTOMATIONHOME/linux/dwm/set-vscode-theme
+$HOME/dwm-flexipatch/scripts/set-vscode-theme
 
 
 ### Alacritty ###
-$AUTOMATIONHOME/linux/dwm/alacritty-color-export/script.sh
+$HOME/dwm-flexipatch/scripts/alacritty-color-export/script.sh
