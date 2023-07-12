@@ -1,0 +1,5 @@
+yay
+alacritty
+make
+pamixer
+net-tools

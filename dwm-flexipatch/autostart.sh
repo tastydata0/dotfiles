@@ -4,7 +4,7 @@
 
 ~/xrandr_setup.sh 
 
-$AUTOMATIONHOME/linux/dwm/dwm-theme-switcher/theme-switch -n -r
+$HOME/dwm-flexipatch/scripts/dwm-theme-switcher/theme-switch -n -r
 
 setxkbmap -layout us,ru -option grp:alt_shift_toggle
 

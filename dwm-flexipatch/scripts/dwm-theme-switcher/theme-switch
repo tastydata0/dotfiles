@@ -1,0 +1,51 @@
+#!/usr/bin/bash
+
+
+
+export CURRENT_THEME_FILE_PATH=$HOME/dwm-flexipatch/scripts/dwm-theme-switcher/current_theme
+export CURRENT_THEME=`cat $CURRENT_THEME_FILE_PATH`
+
+if [[ $CURRENT_THEME -eq 1 ]]
+then
+    export LIGHT_THEME=0
+else
+    export LIGHT_THEME=1
+fi
+
+if [[ $* == *-n* ]]
+then
+    export LIGHT_THEME=$CURRENT_THEME
+fi
+
+echo $LIGHT_THEME > $CURRENT_THEME_FILE_PATH
+
+export CONFIG_PATH=~/.config/my-theme-switch/config.json
+export VSCODE_CONFIG_PATH=~/.config/Code/User/settings.json
+
+echo "$LIGHT_THEME"
+
+if [[ $* == *-r* ]]
+then
+    export WALLPAPER=`find ~/Windows/Users/Alex/Pictures/Wallpapers/best/$LIGHT_THEME -type f | shuf -n 1`
+else
+    export WALLPAPER=$(jq -r .wallpaper["$LIGHT_THEME"] <<< `cat $CONFIG_PATH`)
+fi
+
+echo "Wallpaper: $WALLPAPER"
+
+if [[ $LIGHT_THEME -eq 1 ]]
+then
+    export WAL_EXTRA_FLAGS="-l"
+fi
+wal -s -t $WAL_EXTRA_FLAGS -i $WALLPAPER # $AUTOMATIONHOME/linux/dwm/set-wallpaper
+
+$HOME/dwm-flexipatch/scripts/sync-pywal-with-dwm
+sleep 0.3
+$HOME/dwm-flexipatch/scripts/xrdb-sync
+
+export VSCODE_THEME=$(jq -r .vscode_theme["$LIGHT_THEME"] <<< `cat $CONFIG_PATH`)
+$AUTOMATIONHOME/linux/dwm/set-vscode-theme
+
+
+### Alacritty ###
+$AUTOMATIONHOME/linux/dwm/alacritty-color-export/script.sh

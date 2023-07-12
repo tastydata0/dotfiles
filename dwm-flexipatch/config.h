@@ -905,8 +905,8 @@ static const char *brightnessup[] = { "brightnessctl", "set", "5%+", NULL };
 static const char *brightnessdown[] = { "brightnessctl", "set", "5%-", NULL };
 
 /* theme switcher */
-static const char *changewallpaper[] = { "/home/alex/Programming/Automation/linux/dwm/dwm-theme-switcher/theme-switch", "-r", "-n", NULL };
-static const char *changetheme[] = { "/home/alex/Programming/Automation/linux/dwm/dwm-theme-switcher/theme-switch", "-r", NULL };
+static const char *changewallpaper[] = { "/home/alex/dwm-flexipatch/scripts/dwm-theme-switcher/theme-switch", "-r", "-n", NULL };
+static const char *changetheme[] = { "/home/alex/dwm-flexipatch/scripts/dwm-theme-switcher/theme-switch", "-r", NULL };
 
 static const char *flameshot[] = { "flameshot", "gui", NULL};
 
