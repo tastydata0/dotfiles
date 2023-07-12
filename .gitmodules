@@ -1,0 +1,2 @@
+[submodule "dwm-flexipatch/picom"]
+	url = https://github.com/pijulius/picom
