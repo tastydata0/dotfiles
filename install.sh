@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Adapt config.h to current user
+sed -i -E "s#/home/[^\/]+#$HOME#g" dwm-flexipatch/config.h
+
 pip install meson
 pip install -r ./dwm-flexipatch/reqirements.txt
 
