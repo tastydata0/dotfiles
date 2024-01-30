@@ -1,0 +1,3 @@
+#!/bin/bash
+
+# jq ".\"workbench.colorTheme\" = \"$VSCODE_THEME\"" <<< `cat $VSCODE_CONFIG_PATH` > $VSCODE_CONFIG_PATH
